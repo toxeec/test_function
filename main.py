@@ -13,7 +13,7 @@ def random_list_create(n, max_listlen=20, random_range=1000):
             row.append(number)
         if i % 2 == 0:  # сортируем списки row четные
             final_list.append(sorted(row))
-        elif i % 2 != 0:  # сортируем списки row нечетные
+        else:  # сортируем списки row нечетные
             final_list.append(sorted(row, reverse=True))
     return final_list
 
